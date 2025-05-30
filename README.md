@@ -1,5 +1,3 @@
-# Roblox Multi-Instancer
-
 ![RMI](rmi.png)
 
 Run multiple Roblox accounts at the same time. Useful for alts, testing, or just messing around.
