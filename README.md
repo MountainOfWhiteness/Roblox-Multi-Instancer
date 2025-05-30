@@ -1,51 +1,46 @@
+# Roblox Multi-Instancer
+
 ![RMI](rmi.png)
 
-wanna run a zillion roblox accounts at once? this tiny python script's got your back. perfect for alts and testing.
+Run multiple Roblox accounts at the same time. Useful for alts, testing, or just messing around.
 
-## what it does (the good stuff)
+## Features
+- **Easy to use** - Download and run, that's it
+- **Lightweight** - Small Python script, no bloat
+- **Process detection** - Warns you if Roblox is already running
+- **Auto-close** - Can close Roblox for you if needed
+- **Windows only** - Mac/Linux support maybe later sorry :/
 
-*   ✨ **zero setup:** download, run, boom. it's that easy.
-*   🪶 **lightweight:** like, 50 lines of python. tiny wow.
-*   🖼️ **fancy colors:** because looking good matters ofc.
-*   🪟 **windows only (for now):** sorry, mac/linux. we'll get there.
+## How it works
+Roblox uses a mutex (system lock) to prevent multiple instances. This tool grabs that lock first, tricking Roblox into thinking it's the only one running.
 
-## how it works (the magic)
+## Usage
+1. Download the latest release from [releases](releases)
+2. Run `RMI.exe`
+3. If Roblox is already open, the tool will ask if you want to close it
+4. Keep the tool running and launch Roblox normally
+5. Open more Roblox instances as needed
 
-okay, so roblox has this thing called a "mutex." it's like a lock that says "only one roblox at a time!" this script yoinks that lock and holds onto it, so roblox *thinks* there's only one instance running.  sneaky, right?
+**Important:** Run RMI before opening Roblox, not after.
 
-## how to use it (super simple)
+## Building from source
+1. Install dependencies:
+   ```bash
+   pip install pywin32 colorama psutil
+   ```
+2. Build executable:
+   ```bash
+   pyinstaller --onefile --name="RobloxMultiInstancer" rmultinstance.py
+   ```
+3. Find your exe in the `dist` folder
 
-1.  grab the latest release [here](releases).
-2.  run `RMI.exe`.
-3.  open roblox in your browser and log into all your accounts and press play with the tool open.
-4.  unleash the roblox horde. they'll all play nice together.
+## Disclaimer
+This tool modifies how Roblox runs. Use at your own risk. I'm not responsible if you get banned or something breaks.
 
-## build it yourself (for the code wizards)
+## Issues
+Found a bug? [Create an issue](https://github.com/MountainOfWhiteness/Roblox-Multi-Instancer/issues) with details about what went wrong.
 
-1.  install the good stuff:
+## License
+MIT License - do whatever you want with it.
 
-    ```bash
-    pip install pywin32 colorama
-    ```
-
-2.  make it happen:
-
-    ```bash
-    pyinstaller --onefile rmultinstance.py 
-    ```
-
-3.  your baby will be in the `dist` folder.
-
-## important stuff (listen up)
-
-*   **anticheat warning:**  using this *might* get you in trouble with the roblox police. use with caution – blah blah blah you get the point...
-
-
-## can't get it to work?(issues)
-
-something went boom? tell us about it! go ahead, be dramatic. give us the low-down on the drama! Create an [issue here](https://github.com/MountainOfWhiteness/Roblox-Multi-Instancer/issues), preferably before the apocalypse hits.
-## license
-
-mit license – do what you want with it. im chill.
-
-made with ❤️ by mountainofwhiteness
+Made by MountainOfWhiteness
