@@ -13,7 +13,7 @@ Run multiple Roblox accounts at the same time. Useful for alts, testing, or just
 Roblox uses a mutex (system lock) to prevent multiple instances. This tool grabs that lock first, tricking Roblox into thinking it's the only one running.
 
 ## Usage
-1. Download the latest release from [releases](releases)
+1. Download the latest release from [releases](https://github.com/MountainOfWhiteness/Roblox-Multi-Instancer/releases)
 2. Run `RMI.exe`
 3. If Roblox is already open, the tool will ask if you want to close it
 4. Keep the tool running and launch Roblox normally
