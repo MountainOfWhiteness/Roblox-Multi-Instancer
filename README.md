@@ -2,6 +2,8 @@
 
 Run multiple Roblox accounts at the same time. Useful for alts, testing, or just messing around.
 
+🚨**ROBLOX BROKE MULTI INSTANCING IN A RECENT UPDATE, EXPLORING CURRENT WORKAROUNDS** 🚨
+
 ## Features
 - **Easy to use** - Download and run, that's it
 - **Lightweight** - Small Python script, no bloat
