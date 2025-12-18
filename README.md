@@ -21,18 +21,8 @@ Roblox uses a mutex (system lock) to prevent multiple instances. This tool grabs
 4. Keep the tool running and launch Roblox normally
 5. Open more Roblox instances as needed
 
-**Important:** Run RMI before opening Roblox, not after.
+**Important:** Run RMI before opening Roblox, not after otherwise RMI will ask you to close current sessions to continue.
 
-## Building from source
-1. Install dependencies:
-   ```bash
-   pip install pywin32 colorama psutil
-   ```
-2. Build executable:
-   ```bash
-   pyinstaller --onefile --name="RobloxMultiInstancer" rmultinstance.py
-   ```
-3. Find your exe in the `dist` folder
 
 ## Disclaimer
 This tool modifies how Roblox runs. Use at your own risk. I'm not responsible if you get banned or something breaks.
