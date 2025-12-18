@@ -9,7 +9,7 @@ Run multiple Roblox accounts at the same time. Useful for alts, testing, or just
 - **Lightweight** - Small Python script, no bloat
 - **Process detection** - Warns you if Roblox is already running
 - **Auto-close** - Can close Roblox for you if needed
-- **Windows only** - Mac/Linux support maybe later sorry :/
+- **Windows only** - Mac/Linux sorry :/
 
 ## How it works
 Roblox uses a mutex (system lock) to prevent multiple instances. This tool grabs that lock first, tricking Roblox into thinking it's the only one running.
