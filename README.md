@@ -1,4 +1,4 @@
-![rmi](rmi.png)
+![rmi](banner.png)
 
 # RMI 0.4
 
