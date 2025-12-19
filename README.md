@@ -25,6 +25,7 @@ Run multiple Roblox accounts at the same time. Fixes the recent update that brok
 
 ## Disclaimer
 Use at your own risk. I'm not responsible for bans or whatever, though this method is generally safe since it doesn't inject code whatsoever.
+Those that are using bootstrappers such as Voidstrap, Bloxstrap, Fishstrap you may encounter issues.
 
 ## Issues
 If it breaks, [make an issue](https://github.com/MountainOfWhiteness/Roblox-Multi-Instancer/issues).
