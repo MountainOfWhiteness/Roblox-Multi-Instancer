@@ -1,27 +1,32 @@
-![rmi](banner.png)
+![rmi](img/banner.png)
 
-# RMI 0.6
+# RMI 0.7
 
-Run multiple Roblox accounts at the same time. This update fixes issues caused by recent Roblox changes that broke multi-instancing again.
+Run multiple Roblox accounts at the same time. RMI 0.7 adds Anti-AFK and a few useful controls without changing what the app is for.
 
-## What's new in 0.6
+## What's new in 0.7
 
-Instance detection has been completely rewritten. Accounts now map correctly and don’t get mixed up between sessions anymore.  
-Each instance uses its own log snapshot so old sessions won’t interfere with new ones.  
-You can close and reopen accounts without them getting stuck.  
-Game detection is more reliable now with place IDs pulled directly from logs and a fallback for the API fails.  
+The UI has been rebuilt with separate pages for your clients, automation, and settings.  
+The startup screen and tray menu have also been redone to match it.  
 
-UI has been cleaned up a bit and redone. Instance cards now properly show avatars, usernames, and game names.  
-Fixed the minimize button bug where it would flash instead of minimizing.  
+Anti-AFK now supports Space, W/S, and Zoom. You can use the same setup for every account or change the method and interval per account.  
+The test button only runs on accounts that are switched on.  
 
-Fixed WMI process monitoring crashes in the background and added a fallback to polling if WMI isn’t available.  
-Process detection now starts instantly on launch
+Added auto-reconnect for the Roblox reconnect prompt.  
+Added automatic muting while Anti-AFK is running, with the old audio state restored when it stops.  
+Added window arranging, close to tray, start in tray, and always on top.  
+
+Improved detection when several clients open close together.  
+Accounts and games are matched from separate log snapshots so old sessions are less likely to get mixed into new ones.  
+Fixed the standalone build missing Tkinter.  
 
 ## Features
 
 Simple to use, just download and run.  
-Lightweight and fast.  
-Handles everything automatically.  
+Anti-AFK controls for each account.  
+Auto-reconnect and audio controls.  
+Arrange your Roblox windows into a grid.  
+Tray controls and saved settings.  
 Windows only sORRY!
 
 ## How to use
@@ -29,9 +34,9 @@ Windows only sORRY!
 1. Download `rmi.exe` from [releases](https://github.com/MountainOfWhiteness/Roblox-Multi-Instancer/releases)  
 2. Run it before opening Roblox  
 3. Launch your accounts  
-4. Done  
+4. Turn on any automation you want  
 
-If Roblox is already open when you start RMI, it will ask you to close it first.
+If Roblox is already open when you start RMI, it will ask before closing the current clients.
 
 ## Disclaimer
 
